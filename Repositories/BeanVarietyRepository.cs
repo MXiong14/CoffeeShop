@@ -6,7 +6,7 @@ using CoffeeShop.Models;
 
 namespace CoffeeShop.Repositories
 {
-    public class BeanVarietyRepository
+    public class BeanVarietyRepository : IBeanVarietyRepository
     {
         private readonly string _connectionString;
         public BeanVarietyRepository(IConfiguration configuration)
