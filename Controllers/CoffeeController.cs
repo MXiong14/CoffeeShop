@@ -56,7 +56,7 @@ namespace CoffeeShop.Controllers
             }
 
             _coffeeRepository.Update(coffee);
-            return NoContent(); // returns a status 204 no content response
+            return NoContent(); // returns a status 204 no content response. Don't have to return data.
         }
 
         // https://localhost:5001/api/coffee/id
