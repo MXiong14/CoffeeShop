@@ -26,7 +26,7 @@ namespace CoffeeShop.Repositories
                 conn.Open();
                 using (var cmd = conn.CreateCommand())
                 {
-                    cmd.CommandText = "SELECT Id, [Name], Region, Notes FROM BeanVariety;";
+                    cmd.CommandText = @"SELECT Id, [Name], Region, Notes FROM BeanVariety;";
                     var reader = cmd.ExecuteReader();
                     var varieties = new List<BeanVariety>();
                     while (reader.Read())
